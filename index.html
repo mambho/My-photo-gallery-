@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+       box-sizing: border-box;
+	}
+	
+	h1{
+		text-align:center;
+	}
+	
+.outer-grid {
+		display: flex;
+		flex-wrap:wrap;
+		padding: 0 4px;
+	}	
+	
+.inner-grid {
+		flex: 25%;
+		max-width:25%;
+		padding:0 4px;
+	}
+
+.inner-grid img{
+		margin-top: 8px;
+		width: 100%;
+		padding : 10px;
+	}
+	
+@media screen and (max-width: 800px){
+		.inner-grid{
+			flex:50%;
+			max-width:50%;
+			}
+	}
+	
+@media screen and (max-width: 600px){
+		.inner-grid{
+			flex:100%;
+			max-width:100%;
+			}
+	}
+	
+	.elem{
+        background-color: #D35400;
+        color:#ffffff;
+        padding: 0px;
+		text-align: center;
+     }
+	
+.galleryelem {
+  margin: 5px;
+  border: 3px solid #D35400;
+ 
+ 
+}	
+
+.high{
+        background-color: #32a852;
+        color:#ffffff;
+        padding: 0px;
+		text-align: center;
+     }
+	
+.galleryhigh {
+  margin: 5px;
+  border: 3px solid #32a852;	
+ 
+.elemi{
+        background-color: #D35400;
+        color:#ffffff;
+        padding: 0px;
+		text-align: center;
+     }
+ 
+  
+</style>
+<body>
+
+<h1> My Photo Gallery </h1>
+
+<div class= "outer-grid">
+<div class= "inner-grid">
+
+
+<div class="elem"><h1> Elementary </h1></div><div class="galleryelem"><img src=elem1.jpg></a>
+<img src=elem2.jpg>
+<img src=elem3.jpg>
+<img src=elem4.jpg>
+<img src=elem5.jpg>
+</div>
+</div>
+
+
+<div class="inner-grid">
+<div class="high"><h1> High School </h1></div>
+<div class="galleryhigh">
+<img src=high1.jpg>
+<img src=high2.jpg>
+<img src=high6.jpg>
+<img src=high4.jpg>
+<img src=high5.jpg>
+</div>
+</div>
+	
+	
+<div class="inner-grid">
+<div class="elem"><h1> Senior High </h1></div>	
+<div class="galleryelem">
+<img src=senior1.jpg>
+<img src=senior2.jpg>
+<img src=senior3.jpg>
+<img src=senior4.jpg>
+<img src=senior5.jpg>
+</div>
+</div>
+
+
+<div class="inner-grid">
+<div class="high"><h1> College </h1></div>	
+<div class="galleryhigh">
+<img src=col1.jpg>
+<img src=col2.jpg>
+<img src=col3.jpg>
+<img src=col4.jpg>
+<img src=col5.jpg>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+
